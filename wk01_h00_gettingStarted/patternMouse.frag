@@ -2,9 +2,9 @@
 precision mediump float;
 #endif
 
-uniform vec2 u_resolution; //canvas size
-uniform vec2 u_mouse; //mouse pos inside canvas
-uniform float u_time; //time (sec since load)
+uniform vec2 u_resolution; 
+uniform vec2 u_mouse; 
+uniform float u_time; 
 
 float speed = 50.0;
 float seed = 13.344534;
@@ -12,7 +12,7 @@ float cirSizeRatio = .2;
 
 vec3 randomSpeed (vec3 t) {
     t.r = fract(sin(dot(t.r ,seed)));
-    t.g = fract(sin(dot(t.g ,seed)) );
+    t.g = fract(sin(dot(t.g ,seed)));
     t.b = fract(sin(dot(t.b ,seed)));
     return t;
 }
