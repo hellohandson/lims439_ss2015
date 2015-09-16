@@ -1,10 +1,13 @@
 
 
-#Ping's Repo for *Creative Coding: Shader Studio 2015*
-
+#Motion Tracking: Algorithmic Nature
 ---
 
-* **Name:** Si Ping Lim
-* **NewSchool ID:** lims439
-* **Web:** [http://www.thehandson.co](http://www.thehandson.co)
-* **Email:** <lims439@newschool.edu>
+* **Vimeo** [https://vimeo.com/139106356](https://vimeo.com/139106356)
+
+* **Credits to** 
+Denise and Marc Dragiewicz, "Leaf-cutter Ants"
+Tbfxtcxzo, "Mute Swans"
+kyouei design, "square winds bell"
+
+* **Algorithm Based on** ShaderShop at [http://tobyschachman.com/Shadershop/](http://tobyschachman.com/Shadershop/)
