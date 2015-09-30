@@ -22,10 +22,19 @@ float plot2(vec2 st, float pct){
 }
 
 // formula to emulate ants random movement
+// float plot3 (vec2 st, float pct) {
+//     float t = (((fract( sin( floor(st.x ) / 0.23 ) * 900. )) * (((fract( st.x )) * (fract(st.x )) * ((fract( st.x ) - 1.) * (0. -2.) + 1.)))) + ((fract( sin( floor( (st.x - 1.) ) / 0.23 ) * 900. )) * (((fract( (st.x - 1.) )) * (fract( (st.x - 1.) )) * ((fract( (st.x - 1.) ) - 1.) * (0. -2.) + 1.)) * (0. -1.) + 1.))) * 0.67;
+//     return smoothstep( t-0.01, t, pct) - smoothstep( t, t+0.01, pct);
+// }
+
+
+// formula to emulate ants random movement
 float plot3 (vec2 st, float pct) {
-    float t = (((fract( sin( floor(st.x ) / 0.23 ) * 900. )) * (((fract( st.x )) * (fract(st.x )) * ((fract( st.x ) - 1.) * (0. -2.) + 1.)))) + ((fract( sin( floor( (st.x - 1.) ) / 0.23 ) * 900. )) * (((fract( (st.x - 1.) )) * (fract( (st.x - 1.) )) * ((fract( (st.x - 1.) ) - 1.) * (0. -2.) + 1.)) * (0. -1.) + 1.))) * 0.67;
+    float t = ((floor( st.x / 0.63 ) * 0.21) * (sin( st.x / 1. ) * 0.81 * (sin( st.x )));
     return smoothstep( t-0.01, t, pct) - smoothstep( t, t+0.01, pct);
 }
+
+
 
 void main() {
     vec2 st = gl_FragCoord.xy/u_resolution;
