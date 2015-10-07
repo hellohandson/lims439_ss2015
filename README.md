@@ -6,5 +6,5 @@
 
 * **Name:** Si Ping Lim
 * **NewSchool ID:** lims439
-* **Web:** [http://www.thehandson.co](http://www.thehandson.co)
+* **Web:** [http://www.handson.sg](http://www.handson.sg)
 * **Email:** <lims439@newschool.edu>
