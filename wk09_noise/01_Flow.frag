@@ -49,15 +49,15 @@ void main() {
 
     // Add a random position
     float a = 0.0;
-    vec2 vel = vec2(u_time*.1);
+    vec2 vel = vec2(u_mouse*0.001);
     DF += snoise(pos+vel)*.95+.95;
 
     // Add a random position
     a = snoise(pos*vec2(cos(u_time*0.15),sin(u_time*0.5))*0.1)*3.1415;
     vel = vec2(cos(a),sin(a));
-    DF += snoise(pos+vel)*.85+.5;
+    DF += snoise(pos+vel)*.95+.5;
 
-    color = vec3( smoothstep(.8,.1,fract(DF)) );
+    color = vec3( smoothstep(.1,.1,fract(DF)) );
 
     gl_FragColor = vec4(1.0-color,1.0);
 }

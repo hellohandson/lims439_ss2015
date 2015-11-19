@@ -61,12 +61,12 @@ float snoise(vec3 v)
            + i.y + vec4(0.0, i1.y, i2.y, 1.0 )) 
            + i.x + vec4(0.0, i1.x, i2.x, 1.0 ));
 
-  float n_ = 0.142857142857; // 1.0/7.0
+  float n_ = 0.142857142857; 
   vec3  ns = n_ * D.wyz - D.xzx;
 
-  vec4 j = p - 49.0 * floor(p * ns.z * ns.z); // p - 49.0 * floor(p * ns.z * ns.z);  //  mod(p,7*7)
+  vec4 j = p - 49.0 * floor(p * ns.z * ns.z); 
   vec4 x_ = floor(j * ns.z);
-  vec4 y_ = mod(j,n_); //floor(j - 7.0 * x_ );    // mod(j,N)
+  vec4 y_ = mod(j,n_); 
   vec4 x = x_ *ns.x + ns.yyyy;
   vec4 y = y_ *ns.x + ns.yyyy;
   vec4 h = 1.0 - abs(x) - abs(y);
